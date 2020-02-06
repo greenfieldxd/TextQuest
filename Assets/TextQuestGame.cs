@@ -8,23 +8,18 @@ public class TextQuestGame : MonoBehaviour
     [Header("Elements")]
     public Text titleText;
     public Text contentText;
-    public Image titleBackground;
-    public Image contentBackground;
-    public Image mainBackground;
+    
 
     [Header("Config")]
     public string text = "Game Title";
     public int titleTextSize = 30;
-    [TextArea(minLines:10, maxLines: 20)]
-    public string content = "Перед вами два выхода: \n\n 1. Выход один \n 2. Выход два \n 3. Выйти";
+    public Step activeStep;
 
     // Start is called before the first frame update
     void Start()
     {
         titleText.text = text;
-        contentText.text = content;
-        titleText.fontSize = titleTextSize;
-
+        contentText.text = activeStep.content;
 
         
     }
@@ -32,6 +27,33 @@ public class TextQuestGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            CheckPress(0);
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            CheckPress(1);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            CheckPress(2);
+        }
         
+      
     }
+
+    void CheckPress(int index)
+    {
+        if (activeStep.nextSteps.Length > index)
+        {
+            if (activeStep.nextSteps[index] != null)
+            {
+                activeStep = activeStep.nextSteps[index];
+                contentText.text = activeStep.content;
+            }
+        }
+    }
+
 }
