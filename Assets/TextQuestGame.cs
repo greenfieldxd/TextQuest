@@ -9,6 +9,7 @@ public class TextQuestGame : MonoBehaviour
     public Text titleText;
     public Text contentText;
     public Text locationText;
+    public Image locationImage;
     
 
     [Header("Config")]
@@ -22,6 +23,7 @@ public class TextQuestGame : MonoBehaviour
         titleText.text = text;
         contentText.text = activeStep.content;
         locationText.text = activeStep.location;
+        locationImage.sprite = activeStep.background;
 
         
     }
@@ -65,6 +67,7 @@ public class TextQuestGame : MonoBehaviour
                 activeStep = activeStep.nextSteps[index];
                 contentText.text = activeStep.content;
                 locationText.text = activeStep.location;
+                locationImage.sprite = activeStep.background;
             }
         }
     }

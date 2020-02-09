@@ -8,8 +8,9 @@ public class Step : MonoBehaviour
     [TextArea(minLines: 10, maxLines: 40)]
     public string content = "Content Text";
     public string location = "Location Text";
-
+    public Sprite background;
 
     public Step[] nextSteps;
+   
 
 }
