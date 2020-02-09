@@ -8,10 +8,11 @@ public class TextQuestGame : MonoBehaviour
     [Header("Elements")]
     public Text titleText;
     public Text contentText;
+    public Text locationText;
     
 
     [Header("Config")]
-    public string text = "Game Title";
+    public string text = "Четвертая планета";
     public int titleTextSize = 30;
     public Step activeStep;
 
@@ -20,6 +21,7 @@ public class TextQuestGame : MonoBehaviour
     {
         titleText.text = text;
         contentText.text = activeStep.content;
+        locationText.text = activeStep.location;
 
         
     }
@@ -36,11 +38,21 @@ public class TextQuestGame : MonoBehaviour
         {
             CheckPress(1);
         }
+
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             CheckPress(2);
         }
-        
+
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            CheckPress(3);
+        }        
+
+        else if (Input.GetKeyDown(KeyCode.Return))
+        {
+            CheckPress(0);
+        }
       
     }
 
@@ -52,6 +64,7 @@ public class TextQuestGame : MonoBehaviour
             {
                 activeStep = activeStep.nextSteps[index];
                 contentText.text = activeStep.content;
+                locationText.text = activeStep.location;
             }
         }
     }
