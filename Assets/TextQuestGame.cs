@@ -16,6 +16,7 @@ public class TextQuestGame : MonoBehaviour
     public string text = "Четвертая планета";
     public int titleTextSize = 30;
     public Step activeStep;
+    public Step zeroStep;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,11 @@ public class TextQuestGame : MonoBehaviour
         locationText.text = activeStep.location;
         locationImage.sprite = activeStep.background;
 
-        
+        contentText.text = zeroStep.content;
+        locationText.text = zeroStep.location;
+        locationImage.sprite = zeroStep.background;
+
+
     }
 
     // Update is called once per frame
@@ -53,7 +58,9 @@ public class TextQuestGame : MonoBehaviour
 
         else if (Input.GetKeyDown(KeyCode.Return))
         {
-            CheckPress(0);
+            contentText.text = zeroStep.content;
+            locationText.text = zeroStep.location;
+            locationImage.sprite = zeroStep.background;
         }
       
     }
