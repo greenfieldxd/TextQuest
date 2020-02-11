@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -770,8 +771,7 @@ MonoBehaviour:
   content: "\r\u041F\u043E\u043B\u043F\u0443\u0442\u0438 \u043F\u0440\u043E\u0439\u0434\u0435\u043D\u043E.\r\n\u041D\u0438\u043A\u0430\u043A\u0438\u0445
     \u043F\u0440\u043E\u0438\u0441\u0448\u0435\u0441\u0442\u0432\u0438\u0439.\r\n\n1.
     \u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0442\u044C \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u0435.\r\n2.
-    \u0420\u0430\u0441\u0441\u043A\u0430\u0437\u0430\u0442\u044C \u0430\u043D\u0435\u043A\u0434\u043E\u0442.
-    \ "
+    \u0420\u0430\u0441\u0441\u043A\u0430\u0437\u0430\u0442\u044C \u0430\u043D\u0435\u043A\u0434\u043E\u0442.  "
   location: "\u041B\u043E\u043A\u0430\u0446\u0438\u044F:\u0412\u043F\u0430\u0434\u0438\u043D\u0430"
   background: {fileID: 21300000, guid: d3b0db741b52f194cae25f83cc092816, type: 3}
   nextSteps:
@@ -809,10 +809,10 @@ RectTransform:
   m_Father: {fileID: 10975199}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -15.5, y: 267.8}
-  m_SizeDelta: {x: 989.6, y: 166.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -15.5, y: -116.20001}
+  m_SizeDelta: {x: -34.400024, y: 166.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &610627135
 MonoBehaviour:
@@ -1061,10 +1061,10 @@ RectTransform:
   m_Father: {fileID: 10975199}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1024, y: 768}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &931030619
 MonoBehaviour:
@@ -1192,10 +1192,10 @@ RectTransform:
   m_Father: {fileID: 10975199}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8, y: -163}
-  m_SizeDelta: {x: 1022.1, y: 448.2}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 8, y: 221}
+  m_SizeDelta: {x: -1.9000244, y: 448.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1002612695
 MonoBehaviour:
@@ -1524,12 +1524,12 @@ MonoBehaviour:
     \u041C\u0430\u0440\u0441 \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u043B\u0438
     \u043A\u043E\u043C\u0430\u043D\u0434\u0443 \u043A\u043E\u0441\u043C\u043E\u043D\u0430\u0432\u0442\u043E\u0432,
     \u0432\u044B \u043E\u0434\u0438\u043D \u0438\u0437 \u043D\u0438\u0445.\r\n\r\n10:34
-    \u0443\u0442\u0440\u0430 5 \u0441\u0435\u043D\u0442\u044F\u0431\u0440\u044F. \u0417\u0430\u0434\u0430\u0447\u0430
-    \u043A\u043E\u043C\u0430\u043D\u0434\u044B \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C\u0441\u044F
-    \u0432 \u0434\u0430\u043B\u044C\u043D\u0438\u0439 \u043A\u0440\u0430\u0442\u0435\u0440
-    \u0434\u043B\u044F \u0438\u0437\u0443\u0447\u0435\u043D\u0438\u044F \u043E\u0431\u043B\u0430\u0441\u0442\u0438.
-    \u042D\u0442\u043E \u0437\u0430 1 \u043A\u043C \u043E\u0442 \u043C\u0435\u0441\u0442\u0430
-    \u043F\u0440\u0435\u0431\u044B\u0432\u0430\u043D\u0438\u044F.\r\n\u0410\u043D\u0430\u043B\u0438\u0437
+    \u0443\u0442\u0440\u0430 5 \u0441\u0435\u043D\u0442\u044F\u0431\u0440\u044F.
+    \u0417\u0430\u0434\u0430\u0447\u0430 \u043A\u043E\u043C\u0430\u043D\u0434\u044B
+    \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C\u0441\u044F \u0432 \u0434\u0430\u043B\u044C\u043D\u0438\u0439
+    \u043A\u0440\u0430\u0442\u0435\u0440 \u0434\u043B\u044F \u0438\u0437\u0443\u0447\u0435\u043D\u0438\u044F
+    \u043E\u0431\u043B\u0430\u0441\u0442\u0438. \u042D\u0442\u043E \u0437\u0430 1
+    \u043A\u043C \u043E\u0442 \u043C\u0435\u0441\u0442\u0430 \u043F\u0440\u0435\u0431\u044B\u0432\u0430\u043D\u0438\u044F.\r\n\u0410\u043D\u0430\u043B\u0438\u0437
     \u043E\u0431\u043B\u0430\u0441\u0442\u0438 \u043F\u043E\u043A\u0430\u0437\u0430\u043B,
     \u0447\u0442\u043E \u0442\u0430\u043C \u0440\u0430\u0441\u043F\u043E\u043B\u043E\u0436\u0435\u043D\u044B
     \u043D\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043D\u044B\u0435 \u043C\u0438\u043D\u0435\u0440\u0430\u043B\u044B
@@ -1539,8 +1539,9 @@ MonoBehaviour:
     \u0437\u0430\u0449\u0438\u0442\u043D\u044B\u0435 \u0441\u043A\u0430\u0444\u0430\u043D\u0434\u0440\u044B
     \u0440\u0430\u0441\u0441\u0447\u0438\u0442\u0430\u043D\u044B \u043D\u0430 6 \u0447\u0430\u0441\u043E\u0432
     \u0432\u0440\u0435\u043C\u0435\u043D\u0438.\r\n\u041F\u0430\u0440\u0443 \u0441\u043B\u043E\u0432
-    \u043E \u0432\u0430\u0441. \u0412\u044B \u0431\u044B\u0432\u0448\u0438\u0439 \u0441\u0442\u0435\u043D\u0434\u0430\u043F-\u043A\u043E\u043C\u0438\u043A,
-    \u0441 \u0448\u0443\u0442\u043A\u0430\u043C\u0438 \u0443 \u0432\u0430\u0441 \u043D\u0435
+    \u043E \u0432\u0430\u0441. \u0412\u044B \u0431\u044B\u0432\u0448\u0438\u0439
+    \u0441\u0442\u0435\u043D\u0434\u0430\u043F-\u043A\u043E\u043C\u0438\u043A, \u0441
+    \u0448\u0443\u0442\u043A\u0430\u043C\u0438 \u0443 \u0432\u0430\u0441 \u043D\u0435
     \u0437\u0430\u0434\u0430\u043B\u043E\u0441\u044C, \u043D\u043E \u0432\u0430\u0441
     \u0432\u0437\u044F\u043B\u0438 \u0432 \u043A\u043E\u0441\u043C\u043E\u043D\u0430\u0432\u0442\u044B,
     \u0442\u0430\u043A \u0447\u0442\u043E \u043C\u043E\u0436\u0435\u0442\u0435 \u044D\u0442\u0438\u043C
@@ -1789,10 +1790,10 @@ RectTransform:
   m_Father: {fileID: 10975199}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -273.3, y: 156.24998}
-  m_SizeDelta: {x: 432.9, y: 56.6}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 238.70001, y: 156.25}
+  m_SizeDelta: {x: 432.90002, y: 56.599976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1674003915
 MonoBehaviour:
