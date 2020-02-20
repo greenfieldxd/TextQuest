@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TextQuestGame : MonoBehaviour
+public class DublicateGameScript : MonoBehaviour
 {
 
     [Header("Elements")]
@@ -11,14 +11,14 @@ public class TextQuestGame : MonoBehaviour
     public Text contentText;
     public Text locationText;
     public Image locationImage;
-    
+
 
     [Header("Config")]
     public string text = "Четвертая планета";
     public int titleTextSize = 30;
-    
-    public Step zeroStep;
-    Step activeStep;
+
+    public Data zeroStep;
+    Data activeStep;
 
     // Start is called before the first frame update
     void Start()
@@ -61,16 +61,16 @@ public class TextQuestGame : MonoBehaviour
             locationImage.sprite = zeroStep.background;
             activeStep = zeroStep;
         }
-      
+
     }
 
     void CheckPress(int index)
     {
-        if (activeStep.nextSteps.Length > index)
+        if (activeStep.nextData.Length > index)
         {
-            if (activeStep.nextSteps[index] != null)
+            if (activeStep.nextData[index] != null)
             {
-                activeStep = activeStep.nextSteps[index];
+                activeStep = activeStep.nextData[index];
                 contentText.text = activeStep.content;
                 locationText.text = activeStep.location;
                 locationImage.sprite = activeStep.background;
@@ -79,3 +79,4 @@ public class TextQuestGame : MonoBehaviour
     }
 
 }
+
