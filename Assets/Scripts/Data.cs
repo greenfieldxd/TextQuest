@@ -10,6 +10,8 @@ public class Data : ScriptableObject
     public string location = "Location Text";
     public Sprite background;
 
+    public string[] buttonText;
+
     public Data[] nextData;
 
 
