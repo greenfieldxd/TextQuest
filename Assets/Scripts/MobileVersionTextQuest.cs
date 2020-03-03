@@ -15,8 +15,8 @@ public class MobileVersionTextQuest : MonoBehaviour
 
 
     [Header("Config")]
-    public string text = "Четвертая планета";
-    public int titleTextSize = 30;
+    public string text;
+    public int titleTextSize;
 
     public Data zeroStep;
     Data activeStep;
